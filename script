@@ -1,0 +1,34 @@
+import pyautogui
+import colorama
+from colorama import Fore, Back, Style
+from random import randint
+from time import sleep
+from timeit import default_timer as timer
+
+colorama.init(autoreset=True)
+
+def repeat_action(times, f, *args):
+    for i in range(times): f(*args)
+
+print(Fore.YELLOW + "What do you want to type?")
+string = input("")
+def type(string):
+  pyautogui.write(string, interval = 0.5)
+  sleep(randint(1, 2))
+  pyautogui.hotkey('enter')
+  sleep(randint(1, 3))
+
+print(Fore.YELLOW + "How many times?")
+num = input("")
+sleep(3)
+start = int(timer())
+repeat_action(int(num), type, string)
+end = int(timer())
+
+timers_seconds = end - start
+timers_minutes = int(timers_seconds / 60)
+
+if timers_seconds <= 59 :
+  print('Done in', timers_seconds, 'seconds! 😎')
+else :
+  print('Done in', timers_minutes, 'minutes! 🤓')
