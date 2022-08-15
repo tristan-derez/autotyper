@@ -35,8 +35,5 @@ if __name__ == "__main__" : # make sure script is main and not imported before e
 
   if timers_seconds <= 59:
     print(Fore.GREEN + "Done in", timers_seconds,Fore.GREEN + "seconds! 😎")
-  elif timers_minutes <= 1:
-    print(Fore.GREEN + "Done in", timers_minutes,Fore.GREEN + "minute! 🤓")
-  else: 
-    print(Fore.GREEN + "Done in", timers_minutes,Fore.GREEN + "minutes! 😴")
-
+  else:
+    print(Fore.GREEN + "Done in", timers_minutes + (Fore.GREEN + "minutes! 😴" if timers_minutes > 1 else Fore.GREEN + "minute! 🤓"))
