@@ -10,8 +10,9 @@ colorama.init(autoreset=True)
 def repeat_action(times, f, *args):
     for i in range(times): f(*args)
 
-print(Fore.YELLOW + "What do you want to type?")
+print(Fore.YELLOW + "What do you want to type? 🙂")
 string = input("")
+print("Well... weird thing to type but ok! 😷")
 def type(string):
   pyautogui.write(string, interval = 0.5)
   sleep(randint(1, 2))
@@ -20,6 +21,8 @@ def type(string):
 
 print(Fore.YELLOW + "How many times?")
 num = input("")
+print("Put your cursor where you want to type the string, you will have 3 seconds")
+print("Typing", string, "a total of", num, "times 🤣")
 sleep(3)
 start = int(timer())
 repeat_action(int(num), type, string)
