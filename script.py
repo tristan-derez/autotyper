@@ -16,7 +16,7 @@ def type(string):
   pyautogui.hotkey('enter')
   sleep(randint(0, 3))
 
-if __name__ == __main__ : # make sure script is main and not imported before executing script
+if __name__ == "__main__" : # make sure script is main and not imported before executing script
   print(Fore.YELLOW + "What do you want to type? 🙂")
   string = input(Fore.CYAN + "")
   print(Fore.YELLOW + "Well... weird thing to type but ok! 😷")
