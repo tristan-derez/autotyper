@@ -18,3 +18,4 @@ run script:
 ```bash 
 py script
 ```
+then just follow instructions 😄
