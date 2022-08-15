@@ -10,6 +10,7 @@ colorama.init(autoreset=True)
 def repeat_action(times, f, *args):
     for i in range(times): f(*args)
 
+if __name__ == __main__ : # make sure script is main and not imported before executing script
 def type(string):
   pyautogui.write(string, interval = 0.5)
   sleep(randint(1, 2))
