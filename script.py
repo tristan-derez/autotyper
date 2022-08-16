@@ -17,14 +17,14 @@ def type(string):
   sleep(randint(0, 3))
 
 if __name__ == "__main__" : # make sure script is main and not imported before executing script
-  print(Fore.YELLOW + "What do you want to type? 🙂")
+  print(Fore.YELLOW + "What do you want to type?")
   string = input(Fore.CYAN + "")
-  print(Fore.YELLOW + "Well... weird thing to type but ok! 😷")
+  print(Fore.YELLOW + "Well... weird thing to type but ok!")
   print(Fore.YELLOW + "How many times?")
   num = input(Fore.CYAN + "")
   input(Fore.YELLOW + "Press Enter key then put your cursor where you want to type, you will have a delay of 5 seconds ⏰")
   sleep(5)
-  print(Fore.YELLOW + "Typing", Fore.CYAN + string, Fore.YELLOW + "a total of",Fore.CYAN + num, Fore.YELLOW + "times 🤣")
+  print(Fore.YELLOW + "Typing", Fore.CYAN + string, Fore.YELLOW + "a total of",Fore.CYAN + num, Fore.YELLOW + "times 🤓")
 
   start = int(timer())
   repeat_action(int(num), type, string)
